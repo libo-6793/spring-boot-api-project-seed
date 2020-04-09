@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.UnionorderMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.Unionorder">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="UNIONORDICODE" jdbcType="VARCHAR" property="unionordicode" />
+    <result column="UNIONORDCODE" jdbcType="VARCHAR" property="unionordcode" />
+    <result column="UNIONORDICODEX" jdbcType="VARCHAR" property="unionordicodex" />
+    <result column="UNIONORDCODEX" jdbcType="VARCHAR" property="unionordcodex" />
+    <result column="SALORDICODE" jdbcType="VARCHAR" property="salordicode" />
+    <result column="SALORDCODE" jdbcType="VARCHAR" property="salordcode" />
+    <result column="PURORDICODE" jdbcType="VARCHAR" property="purordicode" />
+    <result column="PURORDCODE" jdbcType="VARCHAR" property="purordcode" />
+    <result column="CUICODE" jdbcType="VARCHAR" property="cuicode" />
+    <result column="VPREPARE" jdbcType="VARCHAR" property="vprepare" />
+    <result column="PREDATE" jdbcType="TIMESTAMP" property="predate" />
+    <result column="MODIFIER" jdbcType="VARCHAR" property="modifier" />
+    <result column="MODIFYDATE" jdbcType="TIMESTAMP" property="modifydate" />
+    <result column="OWNERYEAR" jdbcType="VARCHAR" property="owneryear" />
+    <result column="STATUS" jdbcType="VARCHAR" property="status" />
+    <result column="VERSIONID" jdbcType="VARCHAR" property="versionid" />
+    <result column="SHEETCODE" jdbcType="VARCHAR" property="sheetcode" />
+    <result column="LIMID" jdbcType="VARCHAR" property="limid" />
+    <result column="RATIFYDATE" jdbcType="TIMESTAMP" property="ratifydate" />
+    <result column="ORIRATIFYDATE" jdbcType="TIMESTAMP" property="oriratifydate" />
+    <result column="SYSAUTOGEN" jdbcType="VARCHAR" property="sysautogen" />
+    <result column="CORPBCODE" jdbcType="VARCHAR" property="corpbcode" />
+    <result column="BCODE" jdbcType="VARCHAR" property="bcode" />
+    <result column="KEPTBCODE" jdbcType="VARCHAR" property="keptbcode" />
+    <result column="WCODE" jdbcType="VARCHAR" property="wcode" />
+    <result column="SALERELATION" jdbcType="VARCHAR" property="salerelation" />
+    <result column="RELATIONTYPE" jdbcType="VARCHAR" property="relationtype" />
+    <result column="ODATE" jdbcType="TIMESTAMP" property="odate" />
+    <result column="AMOUNT" jdbcType="DECIMAL" property="amount" />
+    <result column="UPORDCODE" jdbcType="VARCHAR" property="upordcode" />
+    <result column="UPFCODE" jdbcType="VARCHAR" property="upfcode" />
+    <result column="UPCCODE" jdbcType="VARCHAR" property="upccode" />
+    <result column="UPPRJCODE" jdbcType="VARCHAR" property="upprjcode" />
+    <result column="UPREMARK" jdbcType="VARCHAR" property="upremark" />
+    <result column="DOWNORDCODE" jdbcType="VARCHAR" property="downordcode" />
+    <result column="DOWNFCODE" jdbcType="VARCHAR" property="downfcode" />
+    <result column="DOWNCCODE" jdbcType="VARCHAR" property="downccode" />
+    <result column="DOWNPRJCODE" jdbcType="VARCHAR" property="downprjcode" />
+    <result column="DOWNREMARK" jdbcType="VARCHAR" property="downremark" />
+    <result column="SALGCCODE" jdbcType="VARCHAR" property="salgccode" />
+    <result column="PURGCCODE" jdbcType="VARCHAR" property="purgccode" />
+    <result column="GFCODE" jdbcType="VARCHAR" property="gfcode" />
+    <result column="GFSERATE" jdbcType="DECIMAL" property="gfserate" />
+    <result column="GPREDPROFIT" jdbcType="DECIMAL" property="gpredprofit" />
+    <result column="GDELLIVERYODTYPE" jdbcType="DECIMAL" property="gdelliveryodtype" />
+    <result column="GDELLIVERLASTDATE" jdbcType="TIMESTAMP" property="gdelliverlastdate" />
+    <result column="GEXPIRYDATE" jdbcType="TIMESTAMP" property="gexpirydate" />
+    <result column="GREMARK" jdbcType="VARCHAR" property="gremark" />
+    <result column="ORDTYPE" jdbcType="VARCHAR" property="ordtype" />
+    <result column="BONUSTYPES" jdbcType="VARCHAR" property="bonustypes" />
+    <result column="TIJIANGBILI" jdbcType="DECIMAL" property="tijiangbili" />
+    <result column="PRICETERM" jdbcType="VARCHAR" property="priceterm" />
+    <result column="SHIPMODE" jdbcType="VARCHAR" property="shipmode" />
+    <result column="STOCKMODE" jdbcType="VARCHAR" property="stockmode" />
+    <result column="DARKMETHOD" jdbcType="VARCHAR" property="darkmethod" />
+    <result column="DARKCMSFCODE" jdbcType="VARCHAR" property="darkcmsfcode" />
+    <result column="DISCOUNTRATE" jdbcType="DECIMAL" property="discountrate" />
+    <result column="OVERSHIPRATE" jdbcType="DECIMAL" property="overshiprate" />
+    <result column="SHORTSHIPRATE" jdbcType="DECIMAL" property="shortshiprate" />
+    <result column="FREIGHTFCODE" jdbcType="VARCHAR" property="freightfcode" />
+    <result column="FREIGHTFSERATE" jdbcType="DECIMAL" property="freightfserate" />
+    <result column="FREIGHTFCY" jdbcType="DECIMAL" property="freightfcy" />
+    <result column="INSURANCEMOD" jdbcType="DECIMAL" property="insurancemod" />
+    <result column="INSURANCEFCODE" jdbcType="VARCHAR" property="insurancefcode" />
+    <result column="INSURANCEFSERATE" jdbcType="DECIMAL" property="insurancefserate" />
+    <result column="INSURANCEFCY" jdbcType="DECIMAL" property="insurancefcy" />
+    <result column="INSURANCERATE" jdbcType="DECIMAL" property="insurancerate" />
+    <result column="WFLOWDEFTYPE" jdbcType="VARCHAR" property="wflowdeftype" />
+    <result column="U_WFCODE" jdbcType="VARCHAR" property="uWfcode" />
+    <result column="U_COORDINATION" jdbcType="VARCHAR" property="uCoordination" />
+    <result column="WFLOWDEFCODE" jdbcType="VARCHAR" property="wflowdefcode" />
+    <result column="BUSIMODE" jdbcType="VARCHAR" property="busimode" />
+    <result column="SFCODE" jdbcType="VARCHAR" property="sfcode" />
+    <result column="FCODE" jdbcType="VARCHAR" property="fcode" />
+    <result column="FSERATE" jdbcType="DECIMAL" property="fserate" />
+    <result column="FRERATE1" jdbcType="DECIMAL" property="frerate1" />
+    <result column="FRERATE2" jdbcType="DECIMAL" property="frerate2" />
+  </resultMap>
+</mapper>
